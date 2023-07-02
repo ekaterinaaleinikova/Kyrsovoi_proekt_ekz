@@ -1,0 +1,37 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+@using VacationDB2.Models;
+@using VacatiomWeb2;
+@model VacationRequestSubmission
+<h2>Подать заявку на отпуск</h2>
+
+<form method="post" >
+    <div>
+        <label for="startDate">Дата начала:</label>
+        <input type="date" name="@Model.LeaveStartDate" required>
+    </div>
+
+    <div>
+        <label for="endDate">Дата окончания:</label>
+        <input type="date" id="@Model.VacationEndDate" name="EndDate" required>
+    </div>
+
+    <div>
+        <label for="reason">Причина:</label>
+        <textarea id="@Model.Reason" name="Reason" rows="4" required></textarea>
+    </div>
+
+    <div>
+        <label for="reason">Желаемые дни:</label>
+        <textarea id="@Model.WantDays" name="WantDays" rows="4" required></textarea>
+    </div>
+
+    <div>
+        <label for="reason">Ваш ID:</label>
+        <textarea id="@Model.EmployeeId" name="EmployeeId" rows="4" required></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-default">Отправить запрос</button>
+    </div>
+</form>
+

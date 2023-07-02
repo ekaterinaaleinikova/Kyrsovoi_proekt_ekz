@@ -1,0 +1,30 @@
+﻿@using VacationDB2.Models
+
+@model List<VacationRequestSubmission>
+
+
+<h2>Получить отчет о доступном количестве дней отпусков</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Имя</th>
+			<th>Причина</th>
+			<th>Начало отпуска</th>
+			<th>Конец отпуска</th>
+			<th>Желаемые дни</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var vacation in Model)
+		{
+			<tr>
+				<td>@vacation.EmployeeId</td>
+				<td>@vacation.Reason</td>
+				<td>@vacation.LeaveStartDate</td>
+				<td>@vacation.VacationEndDate</td>
+				<td>@vacation.WantDays</td>
+			</tr>
+		}
+	</tbody>
+</table>

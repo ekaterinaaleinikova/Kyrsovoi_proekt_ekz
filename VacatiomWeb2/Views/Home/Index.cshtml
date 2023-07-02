@@ -1,0 +1,77 @@
+﻿
+@model List<string>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отпуск</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/symbols-nerds.ttf">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/slider.css">
+</head>
+<body>
+    <header class="header">
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slide-holder container">
+                <div class="slide-controller_wrapper">
+                </div>
+                <div class="slides_wrapper">
+                    <div class="slide slide__design">
+                        <div class="slide_info column-left">
+                            <h4 class="slide_info-heading">Добро пожаловать на сайт Отпусков.</h4>
+                            <p class="slide_info-text">Долго, дорого,<br> скрупулезно.</p>
+                            <a asp-controller="Employee" asp-action="LeaveRequest" class="slide_info-button">Подать заявку на отпуск</a>
+                            <a asp-controller="Employee" asp-action="GetReport" class="slide_info-button2">Получить отчет о доступном количестве дней отпусков</a>
+                        </div>
+                    </div><!-- slide end  -->
+
+                </div> <!-- slides_wrapper  -->
+            </div><!-- slide-holder & container  -->
+        </section>
+
+        <section id="store" class="content">
+            <div class="layout-positioner">
+                <header class="content_header">
+                    <div class="content_title">
+                        <div class="title">О портале подачи заявлений на отпуск.</div>
+                        <p class="info">На этом портале вы сможете поать заявление на отпуск.Цель проекта дать людям одной компании возможность подать заявления на отпуск менее чем за минуту из любой точки мира , в любое время и со всех устройств.</p>
+                    </div>
+                    <div class="content_logo">
+                        <div class="content_logo-img"></div>
+                        <span>since 2021</span>
+                    </div>
+                </header>
+                <div class="content_column content_col-1">
+                    <h5>Выполняем заказы на разработку:</h5>
+                    <p>Веб-сайтов любой сложности</p>
+                    <p>Самых сожнейших решений на C#</p>
+                    <p>А также многое другое</p>
+                </div>
+                <div class="content_column content_col-2">
+                    <h5>Как мы работаем:</h5>
+                    <p>С самоотдачей 146%</p>
+                    <p>Соблюдая сроки на 10%</p>
+                    <p>По предоплате 150%</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="layout-positioner">
+                <div class="contacts_map"></div>
+                <div class="contacts_feedback">
+                    <div class="feedback_header"><strong>IT Step</strong> programming class</div>
+                    <div class="feedback_address">г. Алматы</div>
+                    <div class="feedback_phone">тел.+8(800) 555-35-35</div>
+                    <div class="feedback_button"><a href="#">Напишите нам</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
